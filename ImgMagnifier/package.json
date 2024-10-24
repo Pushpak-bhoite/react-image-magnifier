@@ -1,0 +1,40 @@
+{
+  "name": "react-image-magnifier-zoom",
+  "version": "0.0.2",
+  "description": "A React component for image magnification",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/index.css -o ./dist/index.css",
+    "build": "npm run build:css && tsc"
+  },
+  "author": "pushpak-bhoite",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.2",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.11.1",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.1.6",
+    "vite": "^5.4.8"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "dependencies": {
+    "react-image-magnifier-zoom": "^0.0.1"
+  }
+}

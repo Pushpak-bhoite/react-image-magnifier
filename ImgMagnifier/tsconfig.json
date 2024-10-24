@@ -1,0 +1,16 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "target": "ESNext",  // Modern JavaScript language features
+    "module": "ESNext",  // Use ESNext module system for ESM (import/export)
+    "declaration": true, // Generate .d.ts files from TypeScript
+    "outDir": "dist",    // Output compiled files to dist
+    "moduleResolution": "Node",  // Ensure Node-style module resolution for ESM
+    "esModuleInterop": true,  // Interoperability with CommonJS modules
+    "forceConsistentCasingInFileNames": true,  // Enforce consistent casing in imports
+    "strict": true,  // Enable strict type-checking
+    "skipLibCheck": true,  // Skip type checking of all .d.ts files
+    "allowSyntheticDefaultImports": true,  // Allow default imports from modules with no default export
+    "jsx": "react-jsx"  // Enable JSX for React
+  }
+}
