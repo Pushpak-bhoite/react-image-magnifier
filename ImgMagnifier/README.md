@@ -1,69 +1,88 @@
 
+# React Image Magnifier Zoom
 
-# react-image-magnifier-zoom
+A lightweight and customizable image magnifier component for React. This package allows you to zoom in on specific parts of an image using a magnifying glass effect.
 
-A React component that allows users to zoom into images with a magnifying lens effect. This package is perfect for e-commerce sites or galleries where users can view high-resolution images more closely.
+## 📦 Installation
 
-## Note :
- Before proceeding, please note that the height and width of both images must be the same (e.g., width={100}, zoomWidth={100}, height={100}, zoomHeight={100}) to ensure proper output. We are currently working on enhancing this package to make it flexible and easy to use.
-## Installation
-
-To install the package, run:
+To install the package, use npm:
 
 ```bash
 npm install react-image-magnifier-zoom
 ```
 
-## Usage
+or with yarn:
 
-To use the `ImageZoom` component, simply import it into your React component and provide the necessary props:
+```bash
+yarn add react-image-magnifier-zoom
+```
 
-```javascript
+## 🚀 Usage
+
+Here's an example of how to use the `ImageZoom` component in your React project.
+
+### Example
+
+```tsx
 import React from 'react';
 import ImageZoom from 'react-image-magnifier-zoom';
 
-const App = () => {
-    return (
-        <div>
-            <h1>Image Zoom Example</h1>
-            <ImageZoom
-                src="path_to_your_image.jpg"
-                width={400}
-                height={400}
-                zoomWidth={300}
-                zoomHeight={300}
-                lensSize={40}
-            />
-        </div>
-    );
-};
+function App() {
+  return (
+    <div>
+      <h1>Image Magnifier Example</h1>
+      <ImageZoom
+        src="https://via.placeholder.com/800"
+        width={300}
+        height={300}
+        magnifierSize={100}
+        zoomLevel={2.5}
+        enabled={true}
+      />
+    </div>
+  );
+}
 
 export default App;
 ```
 
-## Props
+### Explanation
 
-| Prop          | Type     | Default | Description                                           |
-|---------------|----------|---------|-------------------------------------------------------|
-| `src`        | `string` | `''`    | The source URL of the image to be zoomed in.         |
-| `width`      | `number` | `300`   | The width of the image container.                     |
-| `height`     | `number` | `300`   | The height of the image container.                    |
-| `zoomWidth`  | `number` | `300`   | The width of the zoomed image display.                |
-| `zoomHeight` | `number` | `300`   | The height of the zoomed image display.               |
-| `lensSize`   | `number` | `40`    | The size of the magnifying lens.                      |
+- **`src`**: The source URL of the image.
+- **`width`**: Width of the main image.
+- **`height`**: Height of the main image.
+- **`magnifierSize`** (optional): Diameter of the magnifier circle (default is `150`).
+- **`zoomLevel`** (optional): Magnification level for the zoomed image (default is `2.5`).
+- **`enabled`** (optional): Enables or disables the magnifier feature (default is `true`).
 
-## Styles
+## 🛠️ Props
 
-This component requires Tailwind CSS for styling. Make sure to include Tailwind CSS in your project. You can set up Tailwind CSS by following the [Tailwind CSS installation guide](https://tailwindcss.com/docs/installation).
+| Prop            | Type      | Default | Description                                                   |
+|-----------------|-----------|---------|---------------------------------------------------------------|
+| `src`           | `string`  | `""`    | The image source URL.                                         |
+| `width`         | `number`  | `200`   | The width of the main image.                                  |
+| `height`        | `number`  | `200`   | The height of the main image.                                 |
+| `magnifierSize` | `number`  | `150`   | Diameter of the magnifier circle.                             |
+| `zoomLevel`     | `number`  | `2.5`   | The zoom level for the magnifier effect.                      |
+| `enabled`       | `boolean` | `true`  | Whether the magnifier functionality is enabled or disabled.   |
 
-## License
+## 🖼️ Screenshot
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+![Image Magnifier Zoom Example](./src/assets/demo.png)
 
-## Contributing
+## ⚙️ Customization
 
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or fixes.
+You can customize the `ImageZoom` component by adjusting the properties:
 
-## Author
+- Change the size of the magnifier with `magnifierSize`.
+- Adjust the zoom level with `zoomLevel`.
+- Enable or disable the magnifier with the `enabled` prop.
 
-pushpak-bhoite - [ GitHub Profile](https://github.com/Pushpak-bhoite)
+## 📋 Additional Notes
+
+- Ensure that the `src` prop points to a valid image URL.
+- If using local images, make sure they are correctly imported in your React project.
+
+## 📄 License
+
+This package is licensed under the MIT License.

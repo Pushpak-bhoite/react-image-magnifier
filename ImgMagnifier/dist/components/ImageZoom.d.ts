@@ -1,12 +1,11 @@
 import React from 'react';
-import '../index.css';
-interface ImageZoomProps {
+interface ImageMagnifierProps {
     src?: string;
-    width?: number;
-    height?: number;
-    zoomWidth?: number;
-    zoomHeight?: number;
-    lensSize?: number;
+    width: number;
+    height: number;
+    magnifierSize?: number;
+    zoomLevel?: number;
+    enabled?: boolean;
 }
-declare const ImageZoom: React.FC<ImageZoomProps>;
-export default ImageZoom;
+declare const ImageMagnifier: React.FC<ImageMagnifierProps>;
+export default ImageMagnifier;

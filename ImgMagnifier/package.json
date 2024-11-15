@@ -1,9 +1,21 @@
 {
   "name": "react-image-magnifier-zoom",
-  "version": "0.0.2",
+  "version": "0.0.8",
   "description": "A React component for image magnification",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "keywords": [
+    "react",
+    "image magnifier",
+    "image zoom",
+    "zoom component",
+    "react zoom",
+    "magnifying glass",
+    "react image zoom",
+    "image magnifier for react",
+    "image hover zoom",
+    "zoom lens"
+  ],
   "files": [
     "dist"
   ],
