@@ -68,7 +68,7 @@ export default App;
 
 ## 🖼️ Screenshot
 
-![Image Magnifier Zoom Example](./src/assets/demo.png)
+![Image Magnifier Zoom Example](https://i.ytimg.com/vi/onUH6Op5GKQ/maxresdefault.jpg)
 
 ## ⚙️ Customization
 
